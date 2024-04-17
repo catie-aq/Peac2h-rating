@@ -1,6 +1,6 @@
 import json
-str = input()
-data = json.loads(str)
+str1 = input()
+data = json.loads(str1)
 
 ## Input in Glot shond not have line breaks e.g. : {"test": "Code"}
 
@@ -25,3 +25,5 @@ for i in range(1, 5):
 
 cotations["Exigence physique"] = cotations["Exigence physique"] * data["Exigence physique"]
 cotations["Performance"] = cotations["Performance"] * data["Performance"]
+
+print(json.dumps(cotations))
